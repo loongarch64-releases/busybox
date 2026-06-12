@@ -26,7 +26,7 @@ jobs:
         id: check
         run: |
           # 1. 获取上游最新版本
-          LATEST_VERSION=$(./versions 1)
+          LATEST_VERSION=$(./versions.sh 1)
           LATEST_VERSION=${LATEST_VERSION#*v}
           echo "Latest upstream runc version: $LATEST_VERSION"
 
